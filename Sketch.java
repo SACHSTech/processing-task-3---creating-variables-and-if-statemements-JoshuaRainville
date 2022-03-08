@@ -37,9 +37,11 @@ public class Sketch extends PApplet {
   float rect2XX = random(0, 400);
   float rect2YY = random(0, 400);
 
-  int hour = hour();
+  int hour = hour ();
   int minute = minute();
   int second = second();
+
+  int actualHour = hour + 7;
 
   public void setup() {
     background(0);
@@ -114,7 +116,7 @@ public class Sketch extends PApplet {
 
    
    size(400, 400);
-   text ("The hours are: " + hour , 1, 10);
+   text ("The hours are: " + actualHour , 1, 10);
    text ("The minutes are: " + minute , 1, 20);
    text ("The seconds are: " + second , 1, 30);
     
